@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error Solution</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    //Ensuring the element is in the DOM before manipulating it
+    window.addEventListener('DOMContentLoaded', (event) => {
+      document.getElementById('myDiv').innerHTML = "<p>This is a paragraph inside the div.</p>";
+    });
+  </script>
+</body>
+</html>
